@@ -30,7 +30,7 @@ public class Encoder {
         String p0 = (bb[0]^bb[1]^bb[2]^bb[3]^bb[4]^bb[5]^bb[6]^bb[7]) ? "1" : "0";
         String p1 = (bb[0]^bb[1]^bb[3]^bb[4]^bb[6]) ? "1" : "0";
         String p2 = (bb[0]^bb[2]^bb[3]^bb[5]^bb[6]) ? "1" : "0";
-        String p3 = (bb[1]^bb[2]^bb[3]^bb[6]^bb[7]) ? "1" : "0";
+        String p3 = (bb[1]^bb[2]^bb[3]^bb[7]) ? "1" : "0";
         String p4 = (bb[4]^bb[5]^bb[6]^bb[7]) ? "1" : "0";
         message.append(p0 + p1 + p2);
         message.append(binary.substring(0, 1));
