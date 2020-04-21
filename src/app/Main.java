@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args){
         Encoder encoder = new Encoder();
         String coded = encoder.encodeString("Hello");
-        //System.out.println(coded);
+        System.out.println(coded);
         // for (int i = 0; i < coded.length(); i+=13){
         //     System.out.println(coded.substring(i, i+13));
         // }

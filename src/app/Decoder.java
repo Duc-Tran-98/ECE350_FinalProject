@@ -61,9 +61,10 @@ public class Decoder {
             String charBin = decodeCharacter(binary.substring(i, i+13).toCharArray(), i/13);
             message.append(charBin);
         }
-        System.out.println("Number of Single Errors Detected: " + singleErrorsLoc.size());
-        System.out.println("Number of Multiple Errors Detected: " + doubErrorLoc.size());
-        return message.toString();
+        String singleErr = "Number of Single Errors Detected: " + singleErrorsLoc.size();
+        String doubErr = "Number of Multiple Errors Detected: " + doubErrorLoc.size();
+        String finalMessage = message.toString() + "\n" + singleErr + "\n" + doubErr;
+        return finalMessage;
     }
 
 }
