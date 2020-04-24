@@ -62,8 +62,10 @@ public class Decoder {
             message.append(charBin);
         }
         String singleErr = "Number of Single Errors Detected: " + singleErrorsLoc.size();
+        String errLoc = "Single Errors Detected at the Following Characters: " + singleErrorsLoc.toString();
         String doubErr = "Number of Multiple Errors Detected: " + doubErrorLoc.size();
-        String finalMessage = message.toString() + "\n" + singleErr + "\n" + doubErr;
+        String errLocation = "Multiple Errors Detected at the Following Characters: " + doubErrorLoc.toString();
+        String finalMessage = message.toString() + "\n" + singleErr + "\n" + errLoc + "\n" + doubErr + "\n" + errLocation;
         return finalMessage;
     }
 

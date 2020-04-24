@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "app.Main",
+            "projectName": "FinalProject"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch)-Launch<FinalProject>",
             "request": "launch",
             "vmArgs": "--module-path C:/Users/DNTDN/Downloads/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",

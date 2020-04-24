@@ -74,7 +74,7 @@ public class Launch extends Application {
         VBox vBox = new VBox();
         vBox.setAlignment(Pos.BASELINE_CENTER);
         vBox.setSpacing(20.0);
-        Text enterMessage = new Text("Enter Message:");
+        Text enterMessage = new Text("Enter Encoded Binary:");
         enterMessage.setFont(new Font("Arial", 20));
         TextField messageInput = new TextField();
         messageInput.setFont(new Font("Arial", 15));
@@ -84,7 +84,7 @@ public class Launch extends Application {
         messageInput.setMaxWidth(300);
         TextArea result = new TextArea();
         result.setFont(new Font("Arial", 15));
-        result.setEditable(false);
+        result.setEditable(true);
         result.setWrapText(true);
         result.setMaxSize(300, 200);
         result.setMinSize(300, 200);
